@@ -55,6 +55,7 @@ body {
 }
 
 .link {
+  display: flex;
   text-decoration: none;
 }
 
@@ -74,14 +75,12 @@ body {
 .footer-link:hover,
 .footer-link:focus,
 .footer-link:active {
-  outline: none;
   color: var(--third-text-color);
 }
 
 .card-btn:hover,
 .card-btn:focus,
 .card-btn:active {
-  outline: none;
   background: var(--third-background);
   color: var(--primary-title-color);
 }
@@ -208,6 +207,11 @@ body {
 
 /*Преимущества */
 
+.content {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .content-container {
   width: 1200px;
   margin: 0 auto;
@@ -219,8 +223,6 @@ body {
 
 .content-list {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .content-text {
@@ -249,6 +251,10 @@ body {
 
 /*Чем занимаемся */
 
+.job {
+  padding-bottom: 94px;
+}
+
 .job-title {
   width: 376px;
   height: 42px;
@@ -267,25 +273,21 @@ body {
 
 .job-item:not(:last-child) {
   margin-right: 30px;
-  padding-bottom: 94px;
 }
 
 /*Команда */
 
 .team {
+  padding-top: 94px;
   padding-bottom: 94px;
   background: var(--secondary-background);
-}
-
-.team-container {
-  padding-top: 94px;
 }
 
 .team-title {
   width: 264px;
   height: 42px;
-  padding-bottom: 50px;
   margin: 0 auto;
+  margin-bottom: 20px;
 
   font-weight: 700;
   font-size: 36px;
@@ -297,19 +299,15 @@ body {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
+  margin-left: -30px;
 }
 
 .team-item {
   flex-basis: calc(100% / 4 - 30px);
   border-radius: 4px;
-  margin-top: 50px;
-  margin-right: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
   background-color: var(--main-background);
-}
-
-.card-team {
-  /* box-shadow: var(--card-shadow); */
 }
 
 .card-content-team {
@@ -336,8 +334,9 @@ body {
 
 /* Портфолио */
 
-.card-container {
-  padding: 94px 0px;
+.card {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .card-content-portfolio {
@@ -420,12 +419,9 @@ body {
 
 /*Футер */
 
-.footer-container {
-  padding: 60px 15px;
-}
-
-.footer-item {
-  margin-top: 9px;
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-link {
@@ -436,7 +432,8 @@ body {
 }
 
 .footer-text {
-  margin-top: 20px;
+  margin-bottom: 9px;
+
   font-size: 14px;
   line-height: 1.71;
 
@@ -444,6 +441,7 @@ body {
 }
 
 .footer-logo {
+  margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
